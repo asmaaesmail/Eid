@@ -1,0 +1,404 @@
+@font-face{
+	font-family:tajawal;
+	src : url('../fonts/tajawal.ttf')
+}
+/*For Animation*/
+body {
+	--color-text: #fff;
+	--color-bg: #1f174e;
+	--color-bg-2: #151436;
+	--color-bg-3: #000;
+	--color-link: #8596df;
+	--color-link-hover: #723bb7;
+	background: radial-gradient(ellipse at 30% 48%, #3d8782 0, #0d615b 45%, var(--color-bg-3) 150%);
+	
+}
+body {
+	direction: rtl;
+	text-align: right;
+	font-family: tajawal
+}
+
+.logo-wrapper {
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    right: 0;
+}
+.logo-wrapper img {
+	width: 290px;
+}
+
+.input__field--nao {
+	padding: 0.5em 0em 0.75em;
+	color: #fff;
+	font-size: 26px;
+	width: 460px
+}
+
+.input__field--nao:focus + .input__label--nao,
+.input--filled .input__label--nao {
+	color: #00a99d;
+}
+.input__field--nao:focus ~ .graphic--nao, .input--filled .graphic--nao {
+    stroke: #00a99d;}
+.input__label--nao {
+	left: unset;
+	right: 0;
+	width: 460px;
+	text-align: right;
+	font-size: 20px;
+	color: #fff
+}
+
+.logo-wrapper + p {
+    font-size: 28px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 145px;
+}
+
+.morph-button-modal-4.open .morph-content {
+    margin: -307px 0 0 -173px;
+    width: 345px;
+    height: 614px;
+}
+.morph-button-modal-4.open .morph-content img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.icon-close:hover {
+    color: #00a99d;
+}
+.morph-button-modal-4 > button,
+.morph-button-modal-4 .morph-content {
+	background-color: #00a99d;
+    outline: 0
+}
+.morph-button-modal-4 > button{
+	color: #fff;
+	font-size: 20px
+}
+.morph-button-modal-4 .morph-content {
+	background-color:#07837a;
+	color: #6F73B6;
+}
+span#user-name {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 100px;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 25px;
+}
+.morph-button-modal-4 {
+    display: inline-block;
+    margin-bottom: -60px;
+    margin-top: 30px;
+}
+#print:hover{
+	cursor: url('../img/printer.png'), auto;
+}
+.programer{
+  margin-top: 20px;
+  text-align: center
+}
+.programer a{
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    color: #00a99d;
+    transition: all .4s ease-in-out
+}
+.icon-close {
+    position: absolute;
+    top: 31px;
+    right: 0;
+}
+
+.icon-close {
+    position: absolute;
+    top: 59px;
+    right: 0;
+}
+@media(max-width : 767px){
+.logo-wrapper + p {
+    font-size: 21px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 25px;
+    margin-top: 200px;
+     margin-bottom: 0px; 
+}
+	.morph-button-modal-4.open .morph-content {
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+	
+	.frame {
+    margin-top: 60px;
+}
+	.icon-close:hover {
+    color: #71CAD2;
+}
+	.morph-button-modal-4 > button {
+    /*HEIGHT: 50px;*/
+    margin-top: 75px;
+}
+	.input--nao {
+		margin-top: 35px
+	}
+	.input__label--nao ,.input__field--nao {
+    width: 300px;
+	}
+}
+@media(max-width : 420px){
+    .morph-button-modal-4 > button {
+     HEIGHT: 50px; 
+    margin-top: 75px;
+}
+    .morph-button-fixed, .morph-button-fixed .morph-content {
+        width: auto;
+    }
+    .input--nao {
+    margin-top: 115px;
+    }
+    
+    .icon-close {
+    position: absolute;
+    top: 11px;
+    right: 0;
+}
+}
+/*
+@media screen and (max-width: 812px) , screen and (max-height: 375px) {
+.input--nao {
+    margin-top: 108px;
+}
+}
+    }
+@media screen and (max-width: 640px) , screen and (max-height: 360px) {
+ .input--nao {
+    margin-top: 27px;
+}
+    .content {
+    
+        height: calc(100vh - -14rem);}
+}*/
+/*responsive*/
+@media only screen and (max-width: 991px) and (min-width: 768px)  {
+.logo-wrapper + p {
+    font-size: 21px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 25px;
+    margin-top: 175px;
+     margin-bottom: 0px; 
+}
+	.morph-button-modal-4.open .morph-content {
+   
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -513px 0 0 -384px;
+}
+	
+	.frame {
+    margin-top: 60px;
+}
+	.icon-close:hover {
+    color: #71CAD2;
+}
+	.morph-button-modal-4 > button {
+   
+    margin-top: 22px
+}
+    .input__field--nao {
+    padding: 0.9em 0em 0.75em;
+    font-size: 20px;
+   
+}
+	.input--nao {
+		margin-top: 35px
+	}
+	.input__label--nao ,.input__field--nao {
+    width: 480px;
+	}
+    .content {
+
+        height: calc(100vh - 6rem);
+    }
+    .morph-button-modal-4 {
+    display: inline-block;
+    margin-bottom: -60px;
+    margin-top: 341px;
+}
+    .icon-close {
+    position: absolute;
+    top: 27px;
+    right: 0;
+}
+   
+}
+
+/*
+@media screen and (max-width: 768px){
+     .logo-wrapper + p {
+    font-size: 28px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 145px;
+    margin-top: 235px;
+}
+    }*/
+@media screen and (max-width: 441px){
+  .logo-wrapper + p {
+
+    margin-top: 185px;
+}
+}
+    @media screen and (max-width:414px){
+         .logo-wrapper + p {
+
+    margin-top: 185px;
+}
+  .input--nao {
+    margin-top: 178px;
+}
+      .content {
+    height: 100%;
+    }
+    .morph-button-modal-4 > button {
+    HEIGHT: inherit;
+    margin-top: 0;
+}     
+}
+    
+@media screen and (max-width: 375px){
+    .logo-wrapper + p {
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 25px;
+    margin-top: 136px;
+    margin-bottom: 0px;
+    }
+      .content {
+
+        height: 100%;}
+    .morph-button-modal-4 > button {
+    HEIGHT: 50px;
+    margin-top: 0;
+}
+    .icon-close {
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+    }
+@media screen and (max-width: 360px){
+    .logo-wrapper + p {
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 25px;
+    margin-top: 136px;
+    margin-bottom: 0px;
+    }
+   .frame {
+    padding: 0;
+    }
+    .content {
+
+        height: 100%;}
+    .morph-button-modal-4 > button {
+    HEIGHT: 50px;
+    margin-top: 0;
+}
+    }
+    @media screen and (max-width: 320px){
+   .morph-button-modal-4 > button {
+    HEIGHT: 50px;
+    margin-top: 0;
+}
+    .input--nao {
+    margin-top: 35px;
+}
+    .logo-wrapper img {
+    width: 250px;
+}
+    .frame {
+        padding: 0;
+        }
+    .content {
+    height: 100%;
+    }
+    .morph-button-modal-4 > button {
+    HEIGHT: 50px;
+    margin-top: 0;
+}
+    }
+    
+    .icon-close {
+  
+    color: #69ccd2;
+        transition: all .4s ease-in-out
+}
+    
+    /***/
+    #download {
+   position: absolute;
+   top: 0;
+   z-index: 9;
+   background: #00a99d;
+   right: 0;
+   width: 100%;
+   text-align: center;
+   padding: 10px;
+   background-color: #00a99d     
+  
+}
+    #download  {
+    cursor: url(../img/download%20.png), auto;
+}
+    #download {
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    background: #00a99d;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+        color: #fff
+}
+canvas#canvaso {
+    height: calc(100% - 30px);
+    margin-top: 15px;
+}
+/*@media screen and (max-width: 1024px) , screen and (max-height: 1366px) {
+    canvas#canvaso {
+    height: auto;
+    margin-top:0
+}
+}*/
