@@ -402,3 +402,40 @@ canvas#canvaso {
     margin-top:0
 }
 }*/
+
+
+.flex-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+ #download , #face , #whats{
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    background: #cc1251;
+    width: 33.33%;
+    text-align: center;
+    padding: 7px;
+     color: #fff;
+     font-size: 9px;
+     border: 1px solid #ddd
+}
+#download{
+    right: 0;
+    background-color: #da534d
+}
+#face{
+    right: 33.3333%;
+    background-color: #337ab7
+}
+
+#whats{
+    left: 0;
+    background-color: #5ab85d
+}
+.input__field--nao:focus + .input__label--nao, .input--filled .input__label--nao {
+   
+    -webkit-transform: translate3d(3.5em, -1.25em, 0) scale3d(0.75, 0.75, 1);
+    transform: translate3d(3.5em, -1.25em, 0) scale3d(0.75, 0.75, 1);
+}
