@@ -62,7 +62,11 @@
 							<canvas id="canvaso" />
 						</div>-->
 						<div class="maorphed-wrapper">
-                            <a id="download" download="myImage.jpg" href="" onclick="download_img(this);">تحميل</a>
+                            <div class="flex-icons">
+                                <a id="download" download="myImage.jpg" href="" onclick="download_img(this);">تحميل</a>
+                                <a id="face" download="myImage.jpg" href="" onclick="download_img(this);">شارك علي الفيس بوك</a>
+                                <a id="whats" download="myImage.jpg" href="" onclick="download_img(this);">شارك علي الواتساب</a>
+                            </div>
                             <span class="icon icon-close">اغلاق</span>
                                 <img id="test" style="display:none;width: 345px;height: height: 614px; " width="345" height="614" src="img/card.jpg" />
                             <canvas id="canvaso" />
@@ -93,7 +97,7 @@
 			ctx.drawImage($('img#test').get(0), 0, 0);
 			//refill text
 			ctx.fillStyle = "#00a79d";
-			ctx.fillText($(this).val(),canvas.width - 20 ,canvas.height - 100);
+			ctx.fillText($(this).val(),canvas.width - 20 ,canvas.height - 120);
 		});
 		download_img = function(el) {
 		  var image = canvas.toDataURL("image/jpg");
